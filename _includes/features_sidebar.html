@@ -2,7 +2,7 @@
     <h2 class="title-1x">Features</h2>
         <ul style="list-style: none; text-decoration: none; display: flex; flex-direction:column; gap: 5px; align-items: flex-end;">
             {% for item in site.data.sidebar.children %}
-            <li style="margin-right: 2rem;"><button type="button"><a href="{{ item.url }}"
+            <li style="margin-right: 2rem;"><button type="button"><a href="{{ item.url | relative_url }}"
                         style="text-decoration: none; color: white;">{{ item.title }}</a></button></li>
             {% endfor %}
         </ul>
