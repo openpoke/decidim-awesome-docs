@@ -1,0 +1,47 @@
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end" style="background-color: #FFE233;">
+    <h2 class="title-1x">Features</h2>
+        <ul style="list-style: none; text-decoration: none; display: flex; flex-direction:column; gap: 5px; align-items: flex-end;">
+            {% for item in site.data.sidebar.children %}
+            <li style="margin-right: 2rem;"><button type="button"><a href="{{ item.url }}"
+                        style="text-decoration: none; color: white;">{{ item.title }}</a></button></li>
+            {% endfor %}
+        </ul>
+</aside>
+
+<script>
+    document.querySelectorAll('ul li button a').forEach(link => {
+        link.classList.remove('active');
+
+        if (link.href == window.location.href){
+            link.classList.add('active');
+        }
+    });
+</script>
+
+<style>
+    ul {
+        list-style: none;
+        text-decoration: none; 
+        display: flex; 
+        flex-direction:column; 
+        gap: 5px; 
+        align-items: flex-end;
+    }
+
+    button {
+        background-color: black;
+        border-radius: 35px;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .title-1x {
+        font-weight: bold;
+        text-align: end;
+        margin-right: 2rem;
+        margin-top: 60px;
+    }
+
+    ul li button a.active {
+        opacity: 0.5;
+    }
+</style>

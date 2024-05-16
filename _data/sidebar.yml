@@ -1,0 +1,53 @@
+title: Features Sidebar
+children:
+
+  - title: Image support for the Quill editor
+    url: /features/quill_editor_support.html
+
+  - title: Auto-save for surveys and forms
+    url: /features/autosave_for_surveys_and_forms.html
+
+  - title: Images in proposals
+    url: /features/images_in_proposals.html
+
+  - title: Markdown editor for proposals
+    url: /features/md_editor_for_proposals.html
+
+  - title: Admin scope configuration
+    url: /features/admin_scope_configuration.html
+
+  - title: Awesome map component
+    url: /features/awesome_map_component.html
+
+  - title: Fullscreen Iframe component
+    url: /features/fullscreen_iframe_component.html
+
+  - title: Live support chat
+    url: /features/live_support_chat.html
+
+  - title: Custom CSS
+    url: /features/custom_css_scoped.html
+
+  - title: Change the main menu
+    url: /features/change_main_menu.html
+
+  - title: Assign admins scopes
+    url: /features/assign_admins_to_scopes.html
+
+  - title: Custom fields for proposals
+    url: /features/custom_fields_for_proposals.html
+
+  - title: Custom Redirections
+    url: /features/custom_redirections.html
+
+  - title: Custom validation rules
+    url: /features/custom_validation_rules.html
+
+  - title: Admin accountability
+    url: /features/admin_accountability.html
+
+  - title: Additional proposal sortings
+    url: /features/additional_proposal_sortings.html
+
+  - title: Weighted voting
+    url: /features/weighted_voting.html

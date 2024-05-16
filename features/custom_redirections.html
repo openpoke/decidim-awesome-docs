@@ -1,0 +1,24 @@
+---
+layout: tweaks
+image: /assets/images/features/custom-redirections.png
+---
+
+<h2>Custom Redirections (or URL shortener feature)</h2>
+<p>Admins can create custom paths that redirect to other places. Destinations can be internal absolute paths or external sites.
+    There's also possible to choose to sanitize (ie: remove) any query string or to maintain it (so you can decide to use).</p>
+<p>For instance you can create a redirection like </p>
+
+<ul>
+    <li><code>/take-me-somewhere</code> => <code>/processes/canary-islands</code></li>
+</ul>
+
+<p>Using a link with a query string (ie: <code>/take-me-somewhere?locale=es</code>) that will redirect the user to:</p>
+
+<ul>
+    <li><code>/processes/canary-islands</code> if query string is sanitized</li>
+    <li><code>/take-me-somewhere?locale=es</code> if query string is not sanitized</li>
+</ul>
+
+<blockquote>Redirections work only after all other routes have been processed, you cannot override an existing route. The admin panel comes with a button to check if the redirection works (meaning that no other route is used by the application). Non-working routes will simply be ignored.</blockquote>
+
+<img src="{{ page.image }}" alt="Custom redirections screenshot">

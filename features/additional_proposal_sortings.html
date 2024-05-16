@@ -1,0 +1,49 @@
+---
+layout: tweaks
+image: /assets/images/features/proposal_sorting.png
+image1: /assets/images/features/proposal_sorting-admin.png
+---
+
+<h2>Additional proposal sortings</h2>
+<img src="{{ page.image }}" alt="Proposal sorting" />
+<em>Proposal sorting</em>
+<img src="{{ page.image }}" alt="Proposal sorting admin" />
+<em>Proposal sorting admin</em>
+<p>
+  This feature allows you to add additional sorting options to the proposals
+  component. By default 4 additional sortings are included:
+</p>
+<ul>
+  <li><code>supported_first</code>: Sort proposals supported by me first.</li>
+  <li><code>supported_last</code>: Sort proposals supported by me last.</li>
+  <li><code>az</code>: Sort proposals alphabetically.</li>
+  <li><code>za</code>: Sort proposals alphabetically (reverse).</li>
+</ul>
+<p>
+  By enabling this feature the user choosed sorting method will be stored in the
+  browser's session. This means that if the user changes the sorting method and
+  then navigates to another page, the same sorting will be applied.
+</p>
+<p>
+  You can disable or configure the available sorting types by setting the
+  variable <code>additional_proposal_sortings</code> configuration in an
+  initializer:
+</p>
+
+<div class="language-ruby highlighter-rouge">
+  <div class="highlight">
+    <pre
+      class="highlight"
+    ><code><span class="c1"># config/initializers/awesome_defaults.rb</span>
+        <span class="no">Decidim</span><span class="o">::</span><span class="no">DecidimAwesome</span><span class="p">.</span><span class="nf">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+          <span class="n">config</span><span class="p">.</span><span class="nf">additional_proposal_sortings</span> <span class="o">=</span> <span class="ss">:disabled</span>
+        <span class="k">end</span>
+        
+        <span class="c1"># Or, to disable alphabetical sorting:</span>
+        
+        <span class="no">Decidim</span><span class="o">::</span><span class="no">DecidimAwesome</span><span class="p">.</span><span class="nf">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+          <span class="n">config</span><span class="p">.</span><span class="nf">additional_proposal_sortings</span> <span class="o">=</span> <span class="p">[</span><span class="ss">:supported_first</span><span class="p">,</span> <span class="ss">:supported_last</span><span class="p">]</span>
+        <span class="k">end</span>
+        </code></pre>
+  </div>
+</div>
