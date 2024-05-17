@@ -29,8 +29,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   permissions that let the administrator to choose exactly where to apply those mods. Some 
   tweaks can be applied to any assembly, other in an specific participatory process or even 
   in type of component only.
-baseurl: # https://openpoke.github.io
-url: # decidim-awesome-docs
+baseurl: https://openpoke.github.io
+url: decidim-awesome-docs
 twitter_username:
 github_username: openpoke
 decidim_username: openpoke
