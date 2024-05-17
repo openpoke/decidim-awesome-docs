@@ -1,0 +1,91 @@
+<section class="history-card-container">
+    <div class="history-card">
+        
+        <div class="history-card-content">
+            <div class="history-text">
+                <h3>How did it come?</h3>
+                <h1>To Be The Most <br /> Downloaded <br /> Decidim <span>Pluging</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing. </p>
+                <a href="#" class="btn">Learn more</a>
+                
+            </div>
+        </div>
+        <div class="history-img">
+            <img src="{{ '/assets/images/06_Maxima adaptacion.png' | relative_url }}" alt="Máxima adaptación">
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .history-card-container{
+        padding: 0 100px;
+        background-color: #FFE233;
+    }
+
+    .history-card{
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        background-color: #FFE233;
+        gap: 1.5rem;
+    }
+
+    .history-img img{
+        width: 90%;
+    }
+
+    .history-text h3{
+        color: tomato;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 10px;
+        width: 130px;
+        border-radius: 2rem;
+        background: #c2b41a;
+    }
+
+    .history-text h1{
+        font-size: 3.2rem;
+    }
+
+    .history-text span{
+        color: tomato;
+    }
+
+    .history-text p{
+        max-width: 80%;
+        margin: 1rem 0 1.1rem;
+    }
+
+    .btn{
+        background: black;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 2rem;
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+    .btn:hover{
+        opacity: 0.5;
+        text-decoration: none;
+        color: #fff !important;
+    }
+
+    @media (max-width: 768px) {
+        .history-card-container{
+            padding: 0 10px;
+        }
+
+        .history-card{
+            grid-template-columns: 1fr;
+        }
+
+        .history-text{
+            padding-top: 2rem;
+        }
+    }
+</style>

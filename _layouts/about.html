@@ -4,66 +4,20 @@
     <body>
         {% include header.html -%}
         <main>
-<div class="tweaks-wrapper">
-  <div class="features-sidebar">
-    {% include features_sidebar.html -%}
-  </div>
-  <div class="wrapper-1x" style="margin-top: 60px; margin-bottom: 30px;">
-    {{ content }}
-
-  </div>
-</div>
-
-          </main>
+          <div>
+            {% include history.html -%}
+          </div>
+          <div>
+            {% include ways_to_collab.html -%}
+          </div>
+          <div>
+            {% include organizations_logos.html -%}
+          </div>
+          <div class="wrapper">
+            <!-- {{ content }} -->
+          </div>
+          
+        </main>
           {%- include footer.html -%}   
     </body>
 </html>
-
-<style>
-  .features-sidebar {
-      width: 35%; 
-      min-width: 300px;
-      background-color: #FFE233; 
-      overflow-y: auto; 
-  }
-
-  .tweaks-wrapper {
-      display: flex;
-  }
-
-  .wrapper-1x {
-      display: flex;
-      flex-direction: column;
-      margin-left: 2.5rem;
-      margin-right: 20%;
-  }
-
-  @media (max-width: 577px) {
-    .tweaks-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .features-sidebar {
-                width: 100%;
-            }
-
-    .wrapper-1x {
-      display: flex;
-      flex-direction: column;
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .features-sidebar {
-                width: 100%;
-            }
-
-    .wrapper-1x {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-</style>
