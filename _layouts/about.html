@@ -4,10 +4,17 @@
     <body>
         {% include header.html -%}
         <main>
+            <div class="wrapper">
+              {{ content }}
+            </div>
             <div>
-              <div>
-                {{ content }}
-              </div>
+              {% include history.html -%}
+            </div>
+            <div>
+              {% include ways_to_collab.html -%}
+            </div>
+            <div>
+              {% include partner_logos.html -%}
             </div>
 
         </main>
