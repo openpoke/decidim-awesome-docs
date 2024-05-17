@@ -39,7 +39,6 @@ telegram_username: openpoke
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-postcss
 
 postcss:
