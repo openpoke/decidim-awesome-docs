@@ -4,19 +4,19 @@
     <body>
         {% include header.html -%}
         <main>
-            <div class="wrapper">
-              {{ content }}
-            </div>
-            <div>
-              {% include history.html -%}
-            </div>
-            <div>
-              {% include ways_to_collab.html -%}
-            </div>
-            <div>
-              {% include partner_logos.html -%}
-            </div>
-
+          <div>
+            {% include history.html -%}
+          </div>
+          <div>
+            {% include ways_to_collab.html -%}
+          </div>
+          <div>
+            {% include partner_logos.html -%}
+          </div>
+          <div class="wrapper">
+            {{ content }}
+          </div>
+          
         </main>
           {%- include footer.html -%}   
     </body>
