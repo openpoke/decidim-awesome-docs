@@ -51,3 +51,6 @@ children:
 
   - title: Weighted voting
     url: /features/weighted_voting.html
+
+  - title: Autoblock spam users
+    url: /features/autoblock_spam_users.html
