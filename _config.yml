@@ -33,8 +33,6 @@ baseurl: https://openpoke.github.io
 url: decidim-awesome-docs
 twitter_username:
 github_username: openpoke
-decidim_username: openpoke
-telegram_username: openpoke
 
 # Build settings
 theme: minima
